@@ -23,8 +23,8 @@
     { "label": "Mobile",         "items": "React Native, Objective-C, Swift" },
     { "label": "Front End",      "items": "Typescript, JavaScript, React, Jest, Redux, HTML, CSS, Angular" },
     { "label": "Back End",       "items": "Node, GraphQL, C#, Python, Java, PHP, C/C++, Ruby" },
-    { "label": "Infrastructure", "items": "Terraform, Gitlab CI/CD, Docker, Jenkins" },
-    { "label": "Databases",      "items": "Microsoft SQL Server, MySQL" },
+    { "label": "Infrastructure", "items": "Terraform, Gitlab CI/CD, Docker" },
+    { "label": "Databases",      "items": "Microsoft SQL Server, MySQL,  MongoDB" },
     { "label": "Certifications", "items": "Certified ScrumMaster, Certified Agile Leadership I" }
   ],
   "experience": [
