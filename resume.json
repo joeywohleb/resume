@@ -1,0 +1,115 @@
+{
+  "name": "Joey Wohleb",
+  "contact": {
+    "location": "Kissimmee, FL 34744"
+  },
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "emphasis": "with a specialization in Interactive Intelligence",
+      "school": "Georgia Institute of Technology",
+      "gpa": "3.50",
+      "graduated": "December 2019"
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "emphasis": "with an emphasis in Software Systems",
+      "school": "The University of Tennessee at Chattanooga",
+      "gpa": "3.41",
+      "graduated": "May 2012"
+    }
+  ],
+  "skills": [
+    { "label": "Mobile",         "items": "React Native, Java, Objective-C, Swift" },
+    { "label": "Front End",      "items": "Typescript, JavaScript, React, Jest, Redux, HTML, CSS, Angular" },
+    { "label": "Back End",       "items": "Node, GraphQL, C#, Python, Java, PHP, C/C++, Ruby" },
+    { "label": "Infrastructure", "items": "Terraform, Gitlab CI/CD, Docker, Jenkins" },
+    { "label": "Databases",      "items": "Microsoft SQL Server, MySQL" },
+    { "label": "Certifications", "items": "Certified ScrumMaster, Certified Agile Leadership I" }
+  ],
+  "experience": [
+    {
+      "company": "Indeed",
+      "location": "Austin, TX",
+      "startDate": "October 2021",
+      "endDate": "Present",
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "suffix": "Remote",
+          "bullets": [
+            { "text": "Led the frontend engineering effort for a React web app integrating internal and third-party developer platforms at Indeed; made long-term architecture decisions, planned and delegated work, facilitated all team ceremonies, reviewed all code, collaborated with cross-functional partners, supported onboarding for other teams, and helped the team meet two major deadlines." },
+            { "text": "Led frontend migration of customer-facing web apps from legacy systems to a modern platform, ensuring a seamless transition with zero downtime and no disruption to end users." },
+            { "text": "Conduct thorough code reviews to uphold coding standards, improve maintainability, and ensure best practices, while providing actionable feedback." },
+            { "text": "Served as Scrum Master for multiple concurrent projects, facilitating sprint planning, stand-ups, and retrospectives while ensuring adherence to Agile practices and optimizing team collaboration." },
+            { "text": "Mentored developers across experience levels, helping them grow technically and professionally while empowering them to take on larger responsibilities." },
+            { "text": "Supervised the work of cross-team contractors to ensure projects are delivered on time, within budget, and meet high-quality standards, while coordinating efforts to align with the broader goals of the organization." }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "location": "Atlanta, GA",
+      "startDate": "January 2020",
+      "endDate": "Present",
+      "roles": [
+        {
+          "title": "Instructional Associate",
+          "suffix": "Remote, Part-Time",
+          "bullets": [
+            { "text": "Collaborate with course instructors to update class assignments and ensure they align with the course curriculum and learning objectives." },
+            { "text": "Grade student assignments and exams, providing detailed feedback on areas for improvement and ensuring fair and consistent evaluation of student work." },
+            { "text": "Provided individualized tutoring and mentoring to graduate-level Computer Science students in Machine Learning for Trading, resulting in improved academic performance and understanding of complex concepts." }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "McKee Foods Corporation",
+      "location": "Collegedale, TN",
+      "startDate": "September 2008",
+      "endDate": "October 2021",
+      "pageBreak": true,
+      "roles": [
+        {
+          "title": "Software Engineer III",
+          "suffix": "March 2018 – October 2021",
+          "bullets": [
+            { "text": "Lead developer and Scrum Master for team creating and maintaining direct store delivery (DSD) mobile app. Allows independent distributors selling McKee Foods Corporation brands to do key business functions such as creating invoices, ordering product, and managing inventory. iOS app built with React Native consuming ASP.NET Web API end points." }
+          ]
+        },
+        {
+          "title": "Software Engineer II",
+          "suffix": "May 2015 – March 2018",
+          "bullets": [
+            { "text": "Created gym management and point-of-sale system for company gym. Replicated needed features from out-of-date software for staff. Self-service touchscreen allows employees and their guests access to company gym. Integrated with annual health incentives for employees. Built using AngularJS on ASP.NET MVC." }
+          ]
+        },
+        {
+          "title": "Software Engineer I",
+          "suffix": "May 2012 – May 2015",
+          "bullets": [
+            { "text": "Built secure video streaming web app using ASP.NET and Video.js. Allows media department to post videos granting permission to all employees or selectively using Active Directory, saving the company around $100K/year." },
+            { "text": "Created internal self-service site for employees using ASP.NET. Allows all employees to install software they are licensed for from a local repository, view and subscribe to the uptime status of internal services and applications, view and create I/S service request, and to manage employees." }
+          ]
+        },
+        {
+          "title": "Software Development Intern",
+          "suffix": "September 2008 – May 2012",
+          "bullets": [
+            {
+              "text": "Planned, designed, and managed multiple projects from start to finish, ensuring that all deliverables were completed on time and to a high standard.",
+              "subbullets": [
+                "Designed and developed a Bootstrap WordPress theme for an internal knowledge base, resulting in improved usability and accessibility for employees.",
+                "Created a custom WordPress plugin for LDAP integration, enabling secure and efficient authentication for all users.",
+                "Established a web-based file sharing application using PHP and Microsoft SQL on IIS, facilitating easy and secure sharing of large files among employees."
+              ]
+            },
+            { "text": "Mentored other interns, providing guidance and support on their projects and helping them develop their technical skills." }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{name}} Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 11pt;
+      color: #000;
+      background: #fff;
+      padding: 0.75in 0.75in;
+      max-width: 8.5in;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 20pt;
+      font-weight: bold;
+      margin-bottom: 4px;
+      border-bottom: 1px solid #000;
+    }
+
+    header .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      font-size: 11pt;
+    }
+
+    header .contact span:nth-child(1) {
+      text-align: left;
+    }
+
+    header .contact span:nth-child(2) {
+      text-align: center;
+    }
+
+    header .contact span:nth-child(3) {
+      text-align: right;
+    }
+
+    section {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 12pt;
+      font-weight: bold;
+      border-bottom: 1px solid #000;
+      padding-bottom: 1px;
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+
+    .entry {
+      margin-bottom: 8px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .entry-header .org {
+      font-weight: bold;
+    }
+
+    .entry-header .dates {
+      font-weight: bold;
+      white-space: nowrap;
+      margin-left: 10px;
+    }
+
+    .entry-role {
+      margin-bottom: 4px;
+      margin-top: 6px;
+    }
+
+    .entry-role:first-of-type {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 4px;
+    }
+
+    ul li {
+      margin-bottom: 3px;
+    }
+
+    ul ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    ul ul li::before {
+      content: "- ";
+    }
+
+    .skills-grid {
+      display: grid;
+      gap: 2px;
+    }
+
+    .skill-row {
+      display: flex;
+      gap: 4px;
+    }
+
+    .skill-label {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .page2-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12pt;
+      font-weight: bold;
+      border-bottom: 1px solid #000;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+
+      @page {
+        margin: 0.5in 0.75in;
+        size: letter;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>{{name}}</h1>
+    <div class="contact">
+      <span>{{contact.phone}}</span>
+      <span>{{contact.email}}</span>
+      <span>{{contact.location}}</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    {{#each education}}
+    <div class="entry">
+      <div><strong>{{degree}}</strong> {{emphasis}}</div>
+      <div><em>{{school}}</em></div>
+      <div>GPA: {{gpa}}, Graduated {{graduated}}</div>
+    </div>
+    {{/each}}
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      {{#each skills}}
+      <div class="skill-row">
+        <span class="skill-label">{{label}}:</span> {{items}}
+      </div>
+      {{/each}}
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    {{#each experience}}
+    <div class="entry"{{#if pageBreak}} style="break-before: page;"{{/if}}>
+      {{#if pageBreak}}
+      <div class="page2-header">
+        <span>{{../name}}</span>
+        <span>Page 2 of 2</span>
+      </div>
+      {{/if}}
+      <div class="entry-header">
+        <span class="org">{{company}}, {{location}}</span>
+        <span class="dates">{{startDate}} – {{endDate}}</span>
+      </div>
+      {{#each roles}}
+      <div class="entry-role">
+        <strong>{{title}}</strong>{{#if suffix}} ({{suffix}}){{/if}}
+      </div>
+      <ul>
+        {{#each bullets}}
+        <li>{{text}}{{#if subbullets}}
+          <ul>
+            {{#each subbullets}}<li>{{this}}</li>{{/each}}
+          </ul>
+        {{/if}}</li>
+        {{/each}}
+      </ul>
+      {{/each}}
+    </div>
+    {{/each}}
+  </section>
+
+</body>
+</html>

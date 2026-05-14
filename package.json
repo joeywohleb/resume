@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node build.js --watch",
+    "build": "node build.js",
+    "pdf": "node build.js --pdf",
+    "docx": "node build.js --docx"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.3",
+    "chokidar": "^4.0.3",
+    "handlebars": "^4.7.8",
+    "puppeteer": "^24.0.0"
+  }
+}
