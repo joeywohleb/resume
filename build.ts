@@ -41,9 +41,12 @@ function render(): void {
   console.log(`[${timestamp()}] Rendered → dist/resume.html`);
 }
 
+const SYSTEM_CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+
 async function buildPDF(): Promise<void> {
   const puppeteer = require('puppeteer');
-  const browser = await puppeteer.launch({ headless: true });
+  const executablePath = fs.existsSync(SYSTEM_CHROME) ? SYSTEM_CHROME : undefined;
+  const browser = await puppeteer.launch({ headless: true, executablePath });
   const page = await browser.newPage();
   await page.goto(`file://${OUT_HTML}`, { waitUntil: 'networkidle0' });
   await page.pdf({
