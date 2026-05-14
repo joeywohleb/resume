@@ -20,7 +20,7 @@
     }
   ],
   "skills": [
-    { "label": "Mobile",         "items": "React Native, Java, Objective-C, Swift" },
+    { "label": "Mobile",         "items": "React Native, Objective-C, Swift" },
     { "label": "Front End",      "items": "Typescript, JavaScript, React, Jest, Redux, HTML, CSS, Angular" },
     { "label": "Back End",       "items": "Node, GraphQL, C#, Python, Java, PHP, C/C++, Ruby" },
     { "label": "Infrastructure", "items": "Terraform, Gitlab CI/CD, Docker, Jenkins" },
@@ -35,15 +35,23 @@
       "endDate": "Present",
       "roles": [
         {
-          "title": "Senior Software Engineer",
-          "suffix": "Remote",
+          "title": "Staff Software Engineer",
+          "suffix": "April 2026 – Present",
           "bullets": [
-            { "text": "Led the frontend engineering effort for a React web app integrating internal and third-party developer platforms at Indeed; made long-term architecture decisions, planned and delegated work, facilitated all team ceremonies, reviewed all code, collaborated with cross-functional partners, supported onboarding for other teams, and helped the team meet two major deadlines." },
-            { "text": "Led frontend migration of customer-facing web apps from legacy systems to a modern platform, ensuring a seamless transition with zero downtime and no disruption to end users." },
-            { "text": "Conduct thorough code reviews to uphold coding standards, improve maintainability, and ensure best practices, while providing actionable feedback." },
-            { "text": "Served as Scrum Master for multiple concurrent projects, facilitating sprint planning, stand-ups, and retrospectives while ensuring adherence to Agile practices and optimizing team collaboration." },
-            { "text": "Mentored developers across experience levels, helping them grow technically and professionally while empowering them to take on larger responsibilities." },
-            { "text": "Supervised the work of cross-team contractors to ensure projects are delivered on time, within budget, and meet high-quality standards, while coordinating efforts to align with the broader goals of the organization." }
+            { "text": "Leading development of an AI-powered assistant integrated into a third-party collaboration platform that surfaces candidate screening scores, delivers real-time applicant notifications, and enables employers to ask hiring-related questions in context." },
+            { "text": "Own full technical leadership of the initiative: authored the design document, defined and decomposed the epic, coordinated task delegation across the team, and conduct ongoing code reviews ahead of the first customer launch." }
+          ]
+        },
+        {
+          "title": "Senior Software Engineer",
+          "suffix": "October 2021 – April 2026",
+          "bullets": [
+            { "text": "Led frontend architecture for the Partner Console developer platform, integrating internal and third-party tools; owned long-term technical decisions, planned and delegated work, and coordinated with cross-functional partners to meet major deliverables." },
+            { "text": "Led frontend migration of Hiring Insights and Agency Agreement from legacy systems to the One Host platform, delivering a seamless transition with zero downtime for end users." },
+            { "text": "Built a Node.js GraphQL API and React SPA to replace a costly third-party automation tool; the system supports task scheduling, manual execution, log viewing, and permission management, resulting in a more cost-effective and efficient process." },
+            { "text": "Led frontend development of a secure contract platform enabling external partners to view, sign, and download contracts." },
+            { "text": "Mentored engineers across experience levels through direct coaching and code reviews, raising code quality standards and supporting technical growth across the team." },
+            { "text": "Served as Scrum Master across multiple concurrent projects, facilitating sprint ceremonies and supervising cross-team contractors to ensure on-time, on-budget delivery." }
           ]
         }
       ]
@@ -53,14 +61,15 @@
       "location": "Atlanta, GA",
       "startDate": "January 2020",
       "endDate": "Present",
+      "pageBreak": true,
       "roles": [
         {
           "title": "Instructional Associate",
           "suffix": "Remote, Part-Time",
           "bullets": [
-            { "text": "Collaborate with course instructors to update class assignments and ensure they align with the course curriculum and learning objectives." },
-            { "text": "Grade student assignments and exams, providing detailed feedback on areas for improvement and ensuring fair and consistent evaluation of student work." },
-            { "text": "Provided individualized tutoring and mentoring to graduate-level Computer Science students in Machine Learning for Trading, resulting in improved academic performance and understanding of complex concepts." }
+            { "text": "Grade 6 projects per semester for 40–60 graduate-level Computer Science students in Machine Learning for Trading, providing individualized written feedback on each submission." },
+            { "text": "Previously served as the course academic integrity officer, investigating violations, compiling evidence packages, and managing student response proceedings." },
+            { "text": "Collaborate with course instructors to update and improve programming assignments, ensuring content aligns with current curriculum goals." }
           ]
         }
       ]
@@ -70,7 +79,6 @@
       "location": "Collegedale, TN",
       "startDate": "September 2008",
       "endDate": "October 2021",
-      "pageBreak": true,
       "roles": [
         {
           "title": "Software Engineer III",
